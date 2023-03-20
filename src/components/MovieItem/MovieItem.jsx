@@ -1,6 +1,5 @@
 import { generatePath } from 'react-router-dom';
 import PropTypes from 'prop-types';
-
 import { Image, MovieTitle, PopularMovieItem } from './MovieItem.styled';
 import LinkLocation from 'components/Link/LinkLocation';
 import path from 'Routs/path';

@@ -1,13 +1,14 @@
 import { useLocation } from 'react-router-dom';
+// import { useRef } from 'react';
 import PropTypes from 'prop-types';
 
 import MovieLinkStyle from './LinkLocation.styled';
 
 const LinkLocation = prop => {
-  const { pathname } = useLocation();
+  const location = useLocation();
   const { children } = prop;
   return (
-    <MovieLinkStyle {...prop} state={{ prevPage: pathname }}>
+    <MovieLinkStyle {...prop} state={{ from: location }}>
       {children}
     </MovieLinkStyle>
   );
