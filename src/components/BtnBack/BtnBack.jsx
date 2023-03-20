@@ -4,7 +4,7 @@ import { useRef } from 'react';
 import PropTypes from 'prop-types';
 
 import { ButtonToHomePage } from './BtnBack.styled';
-// Button
+
 const BackButton = ({ children }) => {
   const location = useLocation();
   const goBackLink = useRef(location.state?.from ?? '/');
